@@ -1,16 +1,17 @@
 {
   "name": "@thehumphrey/learningpackage",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "learning about github packages",
-  "main": "WayAuthService.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "dependencies": {
-    "bowser": "2.11.0"
-  },
-  "devDependencies": {
-    "@types/bowser": "1.1.1"
+    "bowser": "2.11.0",
+    "typescript": "^4.0.3"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "deploy": "npm publish"
   },
   "repository": {
     "type": "git",
