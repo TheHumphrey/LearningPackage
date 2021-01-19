@@ -1,0 +1,25 @@
+{
+  "name": "learningpackage",
+  "version": "1.0.0",
+  "description": "learning about github packages",
+  "main": "WayAuthService.ts",
+  "dependencies": {
+    "bowser": "^2.11.0"
+  },
+  "devDependencies": {
+    "@types/bowser": "^1.1.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheHumphrey/LearningPackage.git"
+  },
+  "author": "TheHumphrey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheHumphrey/LearningPackage/issues"
+  },
+  "homepage": "https://github.com/TheHumphrey/LearningPackage#readme"
+}
