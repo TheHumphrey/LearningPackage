@@ -1,3 +1,5 @@
 import WayAuthService from "./src/WayAuthService";
 
-export default WayAuthService;
+module.export = {
+  WayAuthService,
+};

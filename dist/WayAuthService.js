@@ -16,7 +16,8 @@ class WayAuthService {
         this.urlAuth = "";
         this.login = "/v1/login";
         this.logOut = "/v1/sessao/revoke";
-        this.loginExist = "/v1/accesstoken/validate";
+        this.loginExist = "/v1/usuario/loginexists";
+        this.validateToken = "/v1/accesstoken/validate";
         this.renewurl = "/v1/accesstoken/renew";
         this.storageService = new WayTokenService_1.default();
         this.urlAuth = urlAuth;
@@ -35,6 +36,7 @@ class WayAuthService {
             return yield fetch(this.urlAuth + this.login, {
                 method: "POST",
                 body: JSON.stringify(user),
+                headers: new Headers({ "content-type": "application/json" }),
                 mode: "cors",
             })
                 .then((response) => {
@@ -77,8 +79,9 @@ class WayAuthService {
     loginExists(login) {
         return __awaiter(this, void 0, void 0, function* () {
             yield fetch(this.urlAuth + this.loginExist, {
-                method: "GET",
-                mode: "cors",
+                method: "POST",
+                headers: new Headers({ "content-type": "application/json" }),
+                body: JSON.stringify({ email: login }),
             })
                 .then((response) => {
                 return response.json();
@@ -95,6 +98,7 @@ class WayAuthService {
             yield fetch(this.urlAuth + this.renewurl, {
                 method: "POST",
                 mode: "cors",
+                headers: new Headers({ "content-type": "application/json" }),
                 body: JSON.stringify({ refreshToken: refreshToken }),
             })
                 .then((response) => {

@@ -5,6 +5,7 @@ declare class WayAuthService {
     login: string;
     logOut: string;
     loginExist: string;
+    validateToken: string;
     renewurl: string;
     storageService: WayTokenService;
     signInWithUsernameAndPassord(email: string, password: string): Promise<any>;
