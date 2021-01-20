@@ -1,6 +1,6 @@
 {
   "name": "@thehumphrey/learningpackage",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "learning about github packages",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
