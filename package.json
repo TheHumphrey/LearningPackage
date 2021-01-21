@@ -1,12 +1,14 @@
 {
   "name": "@thehumphrey/learningpackage",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "learning about github packages",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "dependencies": {
-    "bowser": "2.11.0",
-    "typescript": "^4.0.3"
+    "bowser": "2.11.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.1.3"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
