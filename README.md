@@ -26,8 +26,11 @@ Install via package.json:
 # Fuctions
 
 signInWithUsernameAndPassword(email: string, password: string);
+
 signOut();
+
 emailExists(email: string);
+
 renew();
 
 ----
