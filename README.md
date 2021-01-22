@@ -25,13 +25,13 @@ Install via package.json:
 ----
 # Fuctions
 
-signInWithUsernameAndPassword(email: string, password: string);
+signInWithUsernameAndPassword( email: string, password: string );
 
-signOut();
+signOut( );
 
-emailExists(email: string);
+emailExists( email: string );
 
-renew();
+renew( );
 
 ----
 
